@@ -12,4 +12,16 @@ console.log(prezzoStandard);
 
 // 4) condizione if per sapere se è minorenne e applicare nel caso true il 20% di sconto
 // 5) condizione if per sapere se è over 65 e applicare nel caso true il 40% di sconto
+if (età < 18) {
+    prezzoFinale = ( prezzoStandard - (prezzoStandard * 0.20) );
+} else if (età > 65) {
+    prezzoFinale = ( prezzoStandard - (prezzoStandard * 0.40) );
+} 
+console.log(prezzoFinale);
+
+// if (età > 65) {
+//     prezzoSenior = (prezzoStandard - (prezzoStandard * 0.40));
+// }
+// console.log(prezzoSenior);
+
 // 6) i risultati dovranno avere massimo due decimali (provare ad usare .toFixed(2))
