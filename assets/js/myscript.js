@@ -16,12 +16,12 @@ if (età < 18) {
     prezzoFinale = ( prezzoStandard - (prezzoStandard * 0.20) );
 } else if (età > 65) {
     prezzoFinale = ( prezzoStandard - (prezzoStandard * 0.40) );
-} 
+} else {
+    prezzoFinale = prezzoStandard;
+}
 console.log(prezzoFinale);
 
-// if (età > 65) {
-//     prezzoSenior = (prezzoStandard - (prezzoStandard * 0.40));
-// }
-// console.log(prezzoSenior);
-
 // 6) i risultati dovranno avere massimo due decimali (provare ad usare .toFixed(2))
+let costoBiglietto = `Il totale del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`;
+
+document.getElementById("contenitore_target").innerHTML = costoBiglietto;
